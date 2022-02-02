@@ -1,0 +1,292 @@
+body {
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+
+
+#header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: top 0.5s;
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+}
+
+.container-fluid {
+    padding-right: 9rem;
+    padding-left: 9rem;
+    padding-top: 140px;
+}
+
+.logo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.wow {
+    color: black;
+    opacity: 60;
+    font-size: 16px;
+}
+
+.wow:hover {
+    color: #4B08A1;
+}
+
+.phone {
+    float: right;
+    display: inline-block;
+}
+
+.navDisplay {
+    clear: right;
+}
+
+.number-right {
+    color: #4B08A1;
+    float: right;
+    margin-bottom: 0.5rem;
+}
+
+nav button,
+#second button {
+    margin-left: 1rem;
+    background-color: #4B08A1;
+}
+
+button {
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 16px;
+    border: white 1px solid;
+}
+
+button:hover {
+    background-color: #4B08A1;
+    border: #4B08A1 1px solid;
+}
+
+
+
+.navigation-bar {
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding-right: 9rem;
+    padding-left: 9rem;
+    width: 100%;
+}
+
+.kitchen-button {
+    border: #4B08A1 1px solid;
+    background-color: white;
+    color: #4B08A1;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.5s;
+    margin-left: 0;
+    margin-right: 1rem;
+    width: 9rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.kitchen-button:hover {
+    border: #4B08A1 1px solid;
+    background-color: #4B08A1;
+    color: white;
+    transition: 3sec;
+}
+
+#kitchen-button-align{
+    display: inline-block;
+}
+
+.column.column1 {
+    padding-top: 3rem;
+    padding-right: 5rem;
+}
+
+#first .column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#second {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #eddde2;
+    /*  display: flex;
+    align-items: center;*/
+
+}
+
+#second .side-column1 {
+    padding-left: 3rem;
+    width: 20%;
+}
+
+#second .side-column2 {
+    padding-right: 3rem;
+    width: 20%;
+}
+
+#second .mid-column {
+    width: 60%;
+}
+
+#third .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    display: flex;
+    height: 14rem;
+    width: 25%;
+
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.third-item1,
+.third-item1 button {
+    background-color: #68749c;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.third-item2,
+.third-item2 button {
+    background-color: #977fc9;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.third-item3,
+.third-item3 button {
+    background-color: #dea4c9;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.third-item4,
+.third-item4 button {
+    background-color: #dea4a4;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.third-item1 button:hover,
+.third-item2 button:hover,
+.third-item3 button:hover,
+.third-item4 button:hover {
+    color: #636466;
+    background-color: #c5c7c9;
+    transition-duration: 1sec;
+    border: none;
+}
+
+.third-item2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.third-item3 {
+    margin-right: 1rem;
+}
+
+footer {
+    /*  position: fixed;
+    bottom: 0;
+    left: 40%;*/
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* The animation code */
+@keyframes example {
+    from {
+        left: 0px;
+        top: 100px;
+    }
+
+    to {
+        left: 0px;
+        top: 0;
+    }
+}
+
+.div-fadein {
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+ td {
+    padding: 0 .5rem;
+    border: 1px solid black;
+}
+
+#toast {
+    float: right;
+    border: none;
+}
+
+input{
+    border: none;
+}
+
+#new-column td{
+    padding: 0;
+    margin: 0;
+}
+
+.hide{
+    visibility: collapse;
+}
+
+#add-button, #submit-button{
+    background-color: #4B08A1;  
+    padding: 0px 20px;
+    margin: 10px 0;
+    font-size: 24px;
+    width: 100px;
+}
+
+#table-btn{
+    border: none;
+
+}
+#submit-button{
+    position: relative;
+    top: 20px;
+    right: 12px;
+}
+

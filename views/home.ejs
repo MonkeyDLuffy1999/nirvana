@@ -1,0 +1,83 @@
+<%- include("partials/header") -%>
+
+        <div id="first">
+            <div class="row">
+                <div class="column column1">
+                    <h1> Welcome to Nirvana's Kitchen! </h1>
+                    <p>
+                        Hi! We are team Nirvana. The best arcare team all over Australia.
+                        This page will help you to guide through food service in Nirvana.
+                        Please follow the instructions given by the website in order to prepare good breakfast as per individuals need. It will disclose the likes, dislikes, allergies and other important aspects of food criteria for all the residents.
+                        Please select one of the options to proceed to see the food requirements of residents.
+                    </p>
+
+                    <div id="kitchen-button-align">
+                    <form action="/ground" method="post">
+                        <button class="kitchen-button" name="groundButton">Ground Floor</button>
+                    </form>
+
+                    <form action="/first" method="post">
+                        <button class="kitchen-button" name="firstButton">First Floor</button>
+                    </form> 
+                    </div>
+                       
+                    
+                </div>
+                <div class="column column2">
+                    <img src="images/arcare.png" alt="arcare">
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <div class="row">
+                <div class="side-column1">
+                    <h3>COVID-19</h3>
+                </div>
+                <div class="mid-column">
+                    <p>
+                        Arcare Aged Care ensures that the safety of all residents and team members is a number one priority. Stay up to date with important notices and visitation requirements for our communities.
+                    </p>
+                </div>
+                <div class="side-column2">
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div id="third">
+            <h2 style="font-weight: bold; opacity: 90%;">I'm looking for</h2>
+            <div class="flex-container">
+                <div class="third-item1 flex-item">
+                    <div>
+                        <h3>Residential Care</h3>
+                    </div>
+                    <div>
+                        <button> VIEW LOCATIONS</button>
+                    </div>
+                </div>
+                <div class="third-item2 flex-item">
+                    <div>
+                        <h3>Home Care</h3>
+                    </div>
+                    <div>
+                        <button> FIND OUT MORE</button>
+                    </div>
+                </div>
+                <div class="third-item3 flex-item">
+                    <div>
+                        <h3>Career Opportunity</h3>
+                    </div>
+                    <div>
+                        <button> VIEW VACANCIES</button>
+                    </div>
+                </div>
+                <div class="third-item4 flex-item">
+                    <div>
+                        <h3>Financial Information</h3>
+                    </div>
+                    <div>
+                        <button> LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+
+<%- include("partials/footer") -%>

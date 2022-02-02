@@ -1,0 +1,113 @@
+<%- include("partials/header") -%>
+
+            <div class="column column1">
+                <h1>Welcome to First Floor</h1>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            Room No.
+                        </td>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            <label for="toast">Drinks</label>
+                            <select name="toast" id="toast">
+                                <option value="sortby"></option>
+                                <option value="brown">Apple</option>
+                                <option value="white">Orange</option>
+                                <option value="multigrain">Resource</option>
+                                <option value="raisin">Cranberry</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="toast">Toast</label>
+                            <select name="toast" id="toast">
+                                <option value="sortby"></option>
+                                <option value="brown">Brown</option>
+                                <option value="white">White</option>
+                                <option value="multigrain">Multigrain</option>
+                                <option value="raisin">Raisin</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="toast">Extras</label>
+                            <select name="toast" id="toast">
+                                <option value="sortby"></option>
+                                <option value="brown">Yoghurt</option>
+                                <option value="white">Two fruits</option>
+                                <option value="multigrain">Prunes</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="toast">Cereals</label>
+                            <select name="toast" id="toast">
+                                <option value="sortby"></option>
+                                <option value="brown">Cornflex</option>
+                                <option value="white">Weetbix</option>
+                                <option value="multigrain">All Bran</option>
+                                <option value="brown">Muesli</option>
+                                <option value="white">Rice Bubble</option>
+                                <option value="multigrain">Porridge</option>
+                            </select>
+                        </td>
+                        <td>
+                            Allergies/Dislikes
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <% data.forEach(function(elements){  %>
+                    <tr>
+                        <td>
+                            <%= elements.id  %>
+                        </td>
+                        <td>
+                            <%= elements.name %>
+                        </td>
+                        <td>
+                            <%= elements.drink  %>
+                        </td>
+                        <td>
+                            <%= elements.toast %>
+                        </td>
+                        <td>
+                            <%= elements.extras  %>
+                        </td>
+                        <td>
+                            <%= elements.cereals %>
+                        </td>
+                        <td>
+                            <%= elements.allergies  %>
+                        </td>
+                    </tr>
+                    <% })  %>
+                    <form action="/post" method="post" class="formPosition">
+                    <tr id="new-column" class="hide">
+                        <td><input type="text" name="id"></td>
+                        <td><input type="text" name="name" autocomplete="off"></td>
+                        <td><input type="text" name="drink"></td>
+                        <td><input type="text" name="toast"></td>
+                        <td><input type="text" name="extras"></td>
+                        <td><input type="text" name="cereals"></td>
+                        <td><input type="text" name="allergies"></td>                     
+                    </tr>
+                    <tr>
+                    <td id="table-btn">
+                    <button id="submit-button" style="visibility:hidden" value="submit">Submit</button>
+                    </td>
+                    </tr>
+                     </form>
+                </tbody>
+            </table>
+            <button id="add-button" onclick="showAddButton()">Add</button>
+        
+            
+
+          
+
+
+<%- include("partials/footer") -%>
